@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     app_name: str = "FastAPI Shop"           
     debug: bool = True #позволяет видеть ошибки
-    database_url: str = "sglite:///./shop.db" 
+    database_url: str = "sqlite:///./shop.db" 
     #пути на backend запросы
     cors_origins: list = [
         "http://localhost:5173",

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 from ..database import get_db
-from ..services.product_service import ProductService
+from ..services import ProductService
 from ..schemas.product import ProductResponse, ProductListResponse
 
 router = APIRouter(
