@@ -10,7 +10,7 @@ class Settings(BaseSettings):
         "http://127.0.0.1:5173",
         "http://127.0.0.1:3000",
     ]
-    static_dir: str = 'staic'
+    static_dir: str = 'static'
     images_dir: str = 'static/images'
 
     class Config:
